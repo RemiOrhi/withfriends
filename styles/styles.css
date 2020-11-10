@@ -1,0 +1,267 @@
+body {
+    background: #fff;
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.header {
+    background: rgb(41,169,173);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    margin-bottom:10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.block-u {
+    border-radius: 5px;
+    background: white;
+    font-size: 32px;
+    color: black;
+    padding: 4px;
+}
+
+.block-friend {
+    padding: 4px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 550px;
+}
+
+.link {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    box-sizing: border-box;
+}
+
+.leftmenu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-right:45px;
+    padding-left: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(222,222,222);
+    margin: 0;
+}
+
+.left-text {
+    padding: 5px 0;
+}
+
+.left-text:hover {
+    background: rgb(234, 240, 238);
+}
+
+.link-leftmenu {
+    font-size: 20px;
+    color: rgb(41,169,173);
+    text-decoration: none;
+}
+
+.lama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+.stock {
+    font-size: 18px;
+    color: rgb(43, 43, 110);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.link-reclama {
+    font-size: 15px;
+    color: grey;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.image-reclama {
+    width: 150px;
+}
+
+.avto {
+    color: black;
+}
+
+.main {
+    float: right;
+    width: 950px;
+    box-sizing: border-box;
+}
+
+.avatar {
+    background: rgb(222,222,222);
+    font-size: 20px;
+    color: rgb(41,169,173);
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+}
+
+.user {
+    display: flex;
+}
+
+.personal {
+    width: 310px;
+    border-left: 2px solid rgb(222,222,222);
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+
+.wall {
+    width: 640px;
+    border-right: 2px solid rgb(222,222,222);
+    box-sizing: border-box;
+}
+
+.ava {
+    width: 298px;
+    object-fit: cover;
+    object-position: top;
+    height: 390px;
+    margin: 0 5px;
+}
+
+.redactor {
+    border-bottom: 1px solid rgb(222,222,222);
+    font-size: 16px;
+    color: rgb(41,169,173);
+    height: 40px;
+    padding: 10px 0 10px 5px;
+    box-sizing: border-box;
+}
+
+.friend-heading {
+    background: rgb(222,222,222);
+    font-size: 20px;
+    color: rgb(41,169,173);
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px 0 0 10px;
+    margin: 10px 0 10px 0;
+}
+
+.friend {
+    display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+    padding: 5px;
+    box-sizing: border-box;
+} 
+
+.imagedruga {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.name {
+    width: 80px;
+    font-size: 16px;
+    color: rgb(32, 45, 85);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.secondavatar {
+    font-size: 20px;
+    color: rgb(41,169,173);
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid rgb(222,222,222);
+    margin: 0;
+}
+
+.right {
+    display: flex;
+}
+
+.right-description {
+    width: 316px;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.right-text {
+    list-style: none;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.right-person {
+    list-style: none;
+    font-size: 16px;  
+    color: rgb(41,169,173);
+    margin-bottom: 10px;
+}
+
+.foto {
+    background: rgb(222,222,222);
+    display: flex;
+    font-size: 20px;
+    color: rgb(41,169,173);
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px 0 0 10px;
+    margin: 0;
+}
+
+.pano {
+    display: flex;
+    flex-wrap: wrap;
+    width: 638px;
+    box-sizing: border-box;
+}
+
+.stena {
+    width: 200px;
+    display: flex;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.nastenu {
+    width: 630px;
+}
+
+.heading-stena {
+    margin: 0;
+    font-size: 16px;
+}
