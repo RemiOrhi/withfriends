@@ -50,6 +50,10 @@ body {
     text-decoration: none;
 }
 
+.link:hover {
+    background: rgb(96, 134, 134);
+}
+
 .left {
     float: left;
     width: 250px;
@@ -264,4 +268,19 @@ body {
 .heading-stena {
     margin: 0;
     font-size: 16px;
+}
+
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background:rgb(41,169,173);
+    border-radius: 10px;
+}
+
+.seabed {
+    font-size: 16px;
+    color: white;
 }
