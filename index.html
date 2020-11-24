@@ -5,19 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>У друзей</title>
         <link rel="stylesheet" href="./styles/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <script src="./script/player.js"></script>
     </head>
     <body>
         <header class="header">
-            <div class="logo">
-                <div class="block-u">У</div>
-                <div class="block-friend">друзей</div>
+            <div class="block">
+                <div class="logo">
+                    <div class="block-u">У</div>
+                    <div class="block-friend">друзей</div>
+                </div>
             </div>
             <ul class="menu">
                 <li><a class="link" href="">друзья</a></li>
                 <li><a class="link" href="">группы</a></li>
                 <li><a class="link" href="">игры</a></li>
                 <li><a class="link" href="">помощь</a></li>
-                <li><a class="link" href="">выход</a></li>
+                <li class="menu-potate"><a class="link" href="">выход</a></li>
             </ul>
         </header>
 
@@ -69,7 +76,7 @@
         </section>
 
         <section class="main">
-            <h2 class="avatar">Avatar</h2>
+            <div class="avatar animate__animated animate__shakeX">Avatar</div>
             <div class="user">
                 <div class="personal">
                     <img class="ava" src="images/ava.jpeg" alt="Ава" />
@@ -171,7 +178,25 @@
                         </div>
                     </div>
                     <h2 class="foto">Записи</h2>
-                    <h3 class="heading-stena">Офомление стены</h3>
+                    <h3 class="heading-stena">Стена</h3>
+                    <div class="music"> 
+                        <h3>Linkin Park - Numb</h3>
+                        <audio src="./content/linkin-park-numb..mp3" controls muted>
+                        </audio>
+                    </div>
+                    <div class="video">
+                        <video id="media" src="./content/tree.mp4" width="480">
+                        </video>
+                        <div class="nav-panel" id="nav_panel">
+                            <div class="buttons" id="buttons">
+                                <input class="button-video" type="button" id="play" value="Play">
+                                <input class="button-video" type="button" id="mute" value="Mute">
+                            </div>
+                            <div class="volume" id="control">
+                                <input type="range" id="volume" min="0" max="1" step="0.1" value="0.6">
+                            </div>
+                        </div>
+                    </div>
                     <div>
                         <img
                             class="nastenu"

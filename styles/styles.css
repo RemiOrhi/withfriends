@@ -1,3 +1,24 @@
+@keyframes magic {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 body {
     background: #fff;
     width: 1200px;
@@ -5,19 +26,24 @@ body {
 }
 
 .header {
-    background: rgb(41,169,173);
+    background: rgb(41, 169, 173);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 0 0 0 10px;
     padding: 15px 50px;
     box-sizing: border-box;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    transition: ease-out 2s;
+}
+
+.block:hover .logo {
+    transform: translateX(300px);
 }
 
 .block-u {
@@ -50,6 +76,10 @@ body {
     text-decoration: none;
 }
 
+.menu-potate {
+    animation: rotation 5s linear infinite;
+}
+
 .link:hover {
     background: rgb(96, 134, 134);
 }
@@ -67,10 +97,10 @@ body {
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding-right:45px;
+    padding-right: 45px;
     padding-left: 0;
     box-sizing: border-box;
-    border-bottom: 1px solid rgb(222,222,222);
+    border-bottom: 1px solid rgb(222, 222, 222);
     margin: 0;
 }
 
@@ -84,8 +114,15 @@ body {
 
 .link-leftmenu {
     font-size: 20px;
-    color: rgb(41,169,173);
+    color: rgb(41, 169, 173);
     text-decoration: none;
+    animation: magic 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.link-leftmenu:hover {
+    color: grey;
 }
 
 .lama {
@@ -125,9 +162,9 @@ body {
 }
 
 .avatar {
-    background: rgb(222,222,222);
+    background: rgb(222, 222, 222);
     font-size: 20px;
-    color: rgb(41,169,173);
+    color: rgb(41, 169, 173);
     height: 40px;
     box-sizing: border-box;
     padding: 10px 0 10px 10px;
@@ -140,14 +177,14 @@ body {
 
 .personal {
     width: 310px;
-    border-left: 2px solid rgb(222,222,222);
+    border-left: 2px solid rgb(222, 222, 222);
     box-sizing: border-box;
     padding: 5px 0;
 }
 
 .wall {
     width: 640px;
-    border-right: 2px solid rgb(222,222,222);
+    border-right: 2px solid rgb(222, 222, 222);
     box-sizing: border-box;
 }
 
@@ -160,18 +197,18 @@ body {
 }
 
 .redactor {
-    border-bottom: 1px solid rgb(222,222,222);
+    border-bottom: 1px solid rgb(222, 222, 222);
     font-size: 16px;
-    color: rgb(41,169,173);
+    color: rgb(41, 169, 173);
     height: 40px;
     padding: 10px 0 10px 5px;
     box-sizing: border-box;
 }
 
 .friend-heading {
-    background: rgb(222,222,222);
+    background: rgb(222, 222, 222);
     font-size: 20px;
-    color: rgb(41,169,173);
+    color: rgb(41, 169, 173);
     height: 30px;
     box-sizing: border-box;
     padding: 5px 0 0 10px;
@@ -184,7 +221,7 @@ body {
     width: 310px;
     padding: 5px;
     box-sizing: border-box;
-} 
+}
 
 .imagedruga {
     width: 80px;
@@ -203,11 +240,11 @@ body {
 
 .secondavatar {
     font-size: 20px;
-    color: rgb(41,169,173);
+    color: rgb(41, 169, 173);
     height: 40px;
     box-sizing: border-box;
     padding: 10px 0 10px 10px;
-    border-bottom: 1px solid rgb(222,222,222);
+    border-bottom: 1px solid rgb(222, 222, 222);
     margin: 0;
 }
 
@@ -231,16 +268,16 @@ body {
 
 .right-person {
     list-style: none;
-    font-size: 16px;  
-    color: rgb(41,169,173);
+    font-size: 16px;
+    color: rgb(41, 169, 173);
     margin-bottom: 10px;
 }
 
 .foto {
-    background: rgb(222,222,222);
+    background: rgb(222, 222, 222);
     display: flex;
     font-size: 20px;
-    color: rgb(41,169,173);
+    color: rgb(41, 169, 173);
     height: 30px;
     box-sizing: border-box;
     padding: 5px 0 0 10px;
@@ -261,6 +298,22 @@ body {
     box-sizing: border-box;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button-video {
+    width: 200px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.volume {
+    display: flex;
+    justify-content: center;
+}
+
 .nastenu {
     width: 630px;
 }
@@ -270,13 +323,28 @@ body {
     font-size: 16px;
 }
 
+.music {
+    display: flex;
+    justify-content: space-around;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-panel {
+    padding: 10px 0;
+}
+
 .footer {
     width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    background:rgb(41,169,173);
+    background: rgb(41, 169, 173);
     border-radius: 10px;
 }
 
