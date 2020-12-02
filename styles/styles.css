@@ -97,7 +97,6 @@ body {
 }
 
 .top-submenu .menu:hover> .top-submenu {
-    left: 60 px;
     top: -5px;
     opacity: 1;
     transition: 1s;
@@ -189,7 +188,6 @@ body {
 }
 
 .left-submenu .leftmenu:hover> .left-submenu {
-    left: 60 px;
     top: -5px;
     opacity: 1;
     transition: 1s;
